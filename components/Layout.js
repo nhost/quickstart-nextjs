@@ -1,6 +1,7 @@
 import styles from '../styles/components/Layout.module.css';
 
-import { Fragment } from 'react';
+import React, { Fragment } from 'react';
+import { useUserContext } from '../UserProvider';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, Transition } from '@headlessui/react';
@@ -13,7 +14,7 @@ import {
 import Avatar from './Avatar';
 
 const Layout = ({ children = null }) => {
-  const user = null;
+  const { user } = useUserContext();
 
   const menuItems = [
     {
