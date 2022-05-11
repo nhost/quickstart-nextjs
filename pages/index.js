@@ -4,8 +4,8 @@ import { useUserContext } from '../UserProvider';
 import Head from 'next/head';
 import Layout from '../components/Layout';
 
-export default function Home() {
-  const { user } = useUserContext();
+const Home = () => {
+  const user = null;
 
   return (
     <Layout>
@@ -30,3 +30,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+export default Home;
