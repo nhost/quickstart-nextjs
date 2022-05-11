@@ -5,7 +5,7 @@ import Head from 'next/head';
 import Layout from '../components/Layout';
 
 const Home = () => {
-  const user = null;
+  const { user } = useUserContext();
 
   return (
     <Layout>
